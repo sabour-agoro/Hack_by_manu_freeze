@@ -13,6 +13,10 @@ build_property.PlatformNeutralAssembly =
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
 build_property.EnforceExtendedAnalyzerRules = 
+<<<<<<< HEAD
+=======
+build_property._SupportedPlatformList = Linux,macOS,Windows
+>>>>>>> 3ba4849e0297321ad1c7a4c049060de31993d6e3
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.TargetFrameworkIdentifier = .NETCoreApp
