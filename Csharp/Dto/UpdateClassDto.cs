@@ -1,8 +1,8 @@
 using System.ComponentModel.DataAnnotations;
 
-public class CreateClassDto
-{
+public class  UpdateClassDto {
+
     public String? Name{get;set;}
-    public int level {get; set;}
+   
     
 }
