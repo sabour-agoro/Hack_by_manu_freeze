@@ -11,5 +11,8 @@ public class Students
     public String? LastName {get; set;}
     public DateTime BirthDate {get; set;}
     public Gender gender {get; set;}
-    
+
+    public int ClasseId {get; set;}
+    public Classe? classe {get; set;}
+
 }

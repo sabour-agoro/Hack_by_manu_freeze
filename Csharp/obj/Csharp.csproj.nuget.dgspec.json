@@ -1,26 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "/home/manuel/Documents/FreezeBoss/Hack_by_manu_freeze/Csharp/Csharp.csproj": {}
+    "C:\\Users\\DELL\\Desktop\\hack_by_manu_freeze\\Csharp\\Csharp.csproj": {}
   },
   "projects": {
-    "/home/manuel/Documents/FreezeBoss/Hack_by_manu_freeze/Csharp/Csharp.csproj": {
+    "C:\\Users\\DELL\\Desktop\\hack_by_manu_freeze\\Csharp\\Csharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/manuel/Documents/FreezeBoss/Hack_by_manu_freeze/Csharp/Csharp.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\hack_by_manu_freeze\\Csharp\\Csharp.csproj",
         "projectName": "Csharp",
-        "projectPath": "/home/manuel/Documents/FreezeBoss/Hack_by_manu_freeze/Csharp/Csharp.csproj",
-        "packagesPath": "/home/manuel/.nuget/packages/",
-        "outputPath": "/home/manuel/Documents/FreezeBoss/Hack_by_manu_freeze/Csharp/obj/",
+        "projectPath": "C:\\Users\\DELL\\Desktop\\hack_by_manu_freeze\\Csharp\\Csharp.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DELL\\Desktop\\hack_by_manu_freeze\\Csharp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/manuel/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,29 +38,27 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
-            "Microsoft.AspNetCore.OpenApi": {
-              "target": "Package",
-              "version": "[9.0.16, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.2, )"
             },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
+            "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[9.0.2, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[9.0.0, )"
             }
           },
           "imports": [
@@ -75,20 +72,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[9.0.16, 9.0.16]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[9.0.16, 9.0.16]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[9.0.16, 9.0.16]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -97,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.108/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
