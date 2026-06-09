@@ -4,14 +4,16 @@ using Csharp.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 
-var connectionString = "Server=localhost;Port=3306;Database=GestionStudent;Uid=root;Pwd=;AllowPublicKeyRetrieval=true;SslMode=None;";
+
+var connectionString = Environment.GetEnvironmentVariable("DB_CONNECTION")
+    ?? "Server=localhost;Port=3306;Database=GestionStudent;Uid=root;Pwd=;AllowPublicKeyRetrieval=true;SslMode=None;";
+
 var serverVersion = new MySqlServerVersion(new Version(9, 1, 0));
 
 builder.Services.AddDbContext<dbConnexion>(options =>
     options.UseMySql(connectionString, serverVersion));
 
 builder.Services.AddControllers();
-
 
 builder.Services.AddCors(options =>
 {

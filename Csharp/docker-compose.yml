@@ -1,0 +1,27 @@
+services:
+  mysql:
+    image: mysql:9.1
+    container_name: schoolmanager_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root1234
+      MYSQL_DATABASE: GestionStudent
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  api:
+    build: .
+    container_name: schoolmanager_api
+    restart: always
+    ports:
+      - "5000:8080"
+    depends_on:
+      - mysql
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - DB_CONNECTION=Server=mysql;Port=3306;Database=GestionStudent;Uid=root;Pwd=root1234;AllowPublicKeyRetrieval=true;SslMode=None;
+
+volumes:
+  mysql_data:
