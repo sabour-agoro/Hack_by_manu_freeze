@@ -9,4 +9,6 @@ public class AcademicYear
     public DateTime EndDate {get; set;}
     public bool IsActive{get; set;}
 
+    public ICollection<Classe> Classes {get; set;} = [];
+
 }

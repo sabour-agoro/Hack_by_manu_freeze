@@ -8,4 +8,7 @@ public class Classe
     
     public int AcademicYearId {get; set;}
     public AcademicYear? AcademicYear {get; set;}
+
+    public ICollection<Students> Students {get; set;} = [];
+    
 }
